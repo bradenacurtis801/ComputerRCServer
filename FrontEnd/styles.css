@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Overall container */
+#audio-player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Audio player */
+  #player {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Volume slider */
+  #volume-slider {
+    width: 150px;
+    -webkit-appearance: none; /* Remove default styling */
+    height: 5px;
+    background: #d3d3d3;
+    border-radius: 5px;
+    margin: 20px;
+  }
+  
+  #volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Volume display */
+  #volume-display {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  /* Play button */
+  #play {
+    background-color: #4CAF50; /* Match the slider thumb */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #play:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+

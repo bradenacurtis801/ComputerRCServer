@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="volume-up">Volume Up</button>
+    <button id="volume-down">Volume Down</button>
+    <button id="sleep">Put Computer to Sleep</button>
+
+    <input type="range" min="0" max="100" step="1" value="50" id="volume-slider" />
+    <p id="volume-display">Volume: 50%</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
