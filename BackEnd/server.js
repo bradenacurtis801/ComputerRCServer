@@ -5,6 +5,12 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+// Check the operating system
+if(os.platform() !== 'win32') { // 'win32' is returned for both 32-bit and 64-bit versions of Windows
+  console.error('Error: This application is only supported on Windows.');
+  process.exit(1); // Exit the application with an error code
+}
+
 const audioControlExe = path.join(__dirname, '..', 'CSharp-Code', 'Release', 'net7.0', 'AudioControlApp.exe');
 
 
